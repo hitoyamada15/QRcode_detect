@@ -1,20 +1,22 @@
 # QRcode_detect
 AR and QRcode detect project
 
-# ライブラリなどのインストール
+# ダウンロード
+```bash
+git clone https://github.com/hitoyamada15/QRcode_detect
+```
 
+# ライブラリなどのインストール
 ```bash
 ./install.sh
 ```
 
 # USBカメラで検出
-
 ```bash
 python3 main_camera.py
 ```
 
 # 個別に写真を検出
-
 ```bash
 python3 main_picture.py
 ```
