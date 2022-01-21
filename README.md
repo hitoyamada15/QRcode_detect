@@ -22,3 +22,6 @@ python3 main_camera.py
 ```bash
 python3 main_picture.py
 ```
+# その他のプログラム
+main_camera.pyを作成するための元となったプログラムです。
+動かないプログラムもあります。
