@@ -16,6 +16,7 @@ git clone https://github.com/hitoyamada15/QRcode_detect
 python3 main_camera.py
 ```
 検出結果はresultフォルダの中に保存されます。
+フローチャートはmain_camera_フローチャート.pdfを確認してください。
 
 # 個別に写真を検出
 ```bash
