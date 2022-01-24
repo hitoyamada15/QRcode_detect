@@ -19,8 +19,8 @@ FONT = cv2.FONT_HERSHEY_SIMPLEX
 # ARマーカーの番号
 AR_top_left     = 0
 AR_top_right    = 1
-AR_bottom_left  = 2
-AR_bottom_right = 3
+AR_bottom_right = 2
+AR_bottom_left  = 3
 
 # 台形補正 比率調整
 W_ratio = 0.8
@@ -66,12 +66,12 @@ def Aruco_detect(frame):
 			top_right_y = int(c[:, 1].mean())
 			top_right_xy_list = np.append(top_right_xy_list, top_right_x)
 			top_right_xy_list = np.append(top_right_xy_list, top_right_y)
-		elif ids[i] == AR_bottom_right: # 右下
+		elif ids[i] == AR_bottom_left: # 右下
 			bottom_left_x = int(c[:, 0].mean())
 			bottom_left_y = int(c[:, 1].mean())
 			bottom_left_xy_list = np.append(bottom_left_xy_list, bottom_left_x)
 			bottom_left_xy_list = np.append(bottom_left_xy_list, bottom_left_y)
-		elif ids[i] == AR_bottom_left: # 左下
+		elif ids[i] == AR_bottom_right: # 左下
 			bottom_right_x = int(c[:, 0].mean())
 			bottom_right_y = int(c[:, 1].mean())
 			bottom_right_xy_list = np.append(bottom_right_xy_list, bottom_right_x)
